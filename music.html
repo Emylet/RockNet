@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>topnet musics</title>
+    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/all.css">
+    <script>
+      $("document").ready(function(){
+        $("#m-naija-top").on("click", function(){
+            $("#naija-topsongs").show();
+            $("#top-global").hide();
+            $("#new-released").hide();
+        });
+
+        $("#m-top-g").on("click", function(){
+            $("#top-global").show();
+            $("#naija-topsongs").hide();
+            $("#new-released").hide();
+        });
+
+        $("#m-newest").on("click", function(){
+            $("#new-released").show();
+            $("#naija-topsongs").hide();
+            $("#top-global").hide();
+        });
+
+
+    });
+    </script>
+    <style>
+        #m-top-g, #m-naija-top, #m-newest{
+        width: 120px;
+        height: 20px;
+        background: none;
+        color: darkblue;
+        border: 2px solid darkblue;
+        font-size: 15px;
+        font-weight: bold;
+        border-radius: 3px;
+        font-family: lucida;
+        }
+        #m-top-g:hover, #m-naija-top:hover, #m-newest:hover{
+            color: red;
+       }
+       @media (max-width:500px){
+        #m-top-g, #m-naija-top, #m-newest{
+        width: 70px;
+        background: none;
+        color: darkblue;
+        border: 2px solid darkblue;
+        font-size: 9px;
+        font-weight: bold;
+        border-radius: 3px;
+        font-family: lucida;
+        }
+        #m-top-g:hover, #m-naija-top:hover, #m-newest:hover{
+            color: red;
+       }
+       
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <button id="logo-btn">ROCK<strong class="net">NET</strong></button>
+        <a href="https://wa.me/+2348109954209" class="fab fa-whatsapp-square"> </a>
+        <a href="#"  class="fab fa-facebook-f "> </a>
+        <a href="#" class="fas fa-user"></a>
+        <a href="#" class="fas fa-film"></a>
+        <a href="#" class="fa-solid fa-headphones"></a>
+        <div id="srch-div">
+        <a href="#" class="fas fa-search"></a>
+        <input type="search">
+        <input id="data-srch" type="button" name="search" value="Search">
+        </div>
+       
+    </header>
+    <ul id="list">
+        <a href="index.html">
+            <li class="header-list ">HOME</li>
+        </a>
+        <a href="#">
+            <li class="header-list active">MUSIC</li>
+        </a>
+        <a href="movies.html">
+            <li class="header-list">MOVIES</li>
+        </a>
+        <a href="#">
+            <li class="header-list">TRENDS</li>
+        </a>
+        <a href="#">
+            <li class="header-list">VIDEOS</li>
+        </a>
+    </ul>
+    <div class="container">
+        <div class="music-box">
+            <button id="m-top-g">Top Global</button>
+            <button id="m-naija-top">Naija Tops</button>
+            <button id="m-newest">Latest </button>
+                <div id="top-global">
+                    <div class="music-div" >
+                        <a href="#"><img class="songs-div" src="topsongs img/11-all i wanna.jpg">
+                            She's all I wanna be 'Tate McRae' Mp3'
+                        </a>
+                    </div>
+                    <div class="music-div" >
+                        <a href="#"><img class="songs-div" src="topsongs img/12-As it was.jpg">
+                        As It Was 'Harry Styles' mp3"
+                        </a>
+                    </div>
+                    <div class="music-div" >
+                        <a href="#"><img class="songs-div" src="topsongs img/13-Late night talking.jpg">
+                        Late Night Talking 'Harry Styles' mp3"
+                        </a>
+                    </div>
+                    <div class="music-div">
+                        <a href="#"><img class="songs-div" src="topsongs img/14-La Lleo.jpg">
+                        La Llevo Al Cielo 'Nengo Flow' mp3"
+                        </a>
+                    </div>
+                    <div class="music-div">
+                        <a href="#"><img class="songs-div" src="topsongs img/15-N95 Kendrick.jpg">
+                        N95 'Kendrick Lamar' mp3"
+                        </a>
+                    </div>
+                    <div class="music-div" >
+                        <a href="#"><img class="songs-div" src="topsongs img/16-Mamii.jpg">
+                        MAMIII 'Becky' mp3"
+                        </a>
+                    </div>
+                    <div class="music-div" >
+                        <a href="#"><img class="songs-div" src="topsongs img/17-jack harlow.jpg">
+                        First Class...'Jack Harlow' mp3"
+                        </a>
+                    </div>
+                    <div class="music-div" >
+                        <a href="#"><img class="songs-div" src="topsongs img/18-future wait 4 U.jpg">
+                        Wait For You 'Future' mp3"
+                        </a>
+                    </div>
+                    <div class="music-div" >
+                        <a href="#"><img class="songs-div" src="topsongs img/7-puffin.jpg">
+                        PUFFIN ON ZOOTIE Future mp3"
+                        </a>
+                    </div>
+                </div>
+                <div id="naija-topsongs">
+                    <div class="music-div" >
+                        <a href="#"><img class="songs-div" src="top naija/1-understand.jpg">
+                        Understand 'Omah Lay' "Mp3"
+                        </a>
+                    </div>
+                    <div class="music-div" >
+                        <a href="#"><img class="songs-div" src="top naija/2-calm down.jpg">
+                        Calm Down 'Rema' mp3"
+                        </a>
+                    </div>
+                    <div class="music-div" >
+                        <a href="#"><img class="songs-div" src="top naija/3-high.jpg">
+                        High 'Adekunle ft Davido' mp3"
+                        </a>
+                    </div>
+                    <div class="music-div" >
+                        <a href="#"><img class="songs-div" src="top naija/4-pour me water.jpg">
+                        Pour Me Water 'Kizz Daniel' mp3"
+                        </a>
+                    </div>
+                    <div class="music-div" >
+                        <a href="#"><img class="songs-div" src="top naija/5-omo pe.jpg">
+                        Omo Ope 'Asake ft Olamide' mp3"
+                        </a>
+                    </div>
+                    <div class="music-div" >
+                        <a href="#"><img class="songs-div" src="top naija/6-las las.jpg">
+                        Last Last 'Burna Boy' mp3"
+                        </a>
+                    </div>
+                    <div class="music-div" >
+                        <a href="#"><img class="songs-div" src="top naija/7-buga.jpg">
+                        Buga 'Kizz Daniel' mp3"
+                        </a>
+                    </div>
+                    <div class="music-div" >
+                        <a href="#"><img class="songs-div" src="top naija/8-dada.jpg">
+                        Dada 'Young John ft Davido' mp3"
+                        </a>
+                    </div>
+                    <div class="music-div" >
+                        <a href="#"><img class="songs-div" src="top naija/9-sugba.jpg">
+                        Sungba Remix 'Asake ft Burna Boy' mp3"
+                        </a>
+                    </div>
+                </div>
+                <div id="new-released">
+                    <div class="music-div" >
+                        <a href="#"><img class="songs-div" src="new songs/1-Ronaldo.jpg">
+                        Ronaldo 'Mohbad' "Mp3"
+                        </a>
+                    </div>
+                    <div class="music-div" >
+                        <a href="#"><img class="songs-div" src="new songs/2-wish list.jpg">
+                        WhishList 'Yung' mp3"
+                        </a>
+                    </div>
+                    <div class="music-div" >
+                        <a href="#"><img class="songs-div" src="new songs/3-set it off.jpg">
+                        Set It Off 'Yung' mp3"
+                        </a>
+                    </div>
+                    <div class="music-div" >
+                        <a href="#"><img class="songs-div" src="top naija/4-pour me water.jpg">
+                        Pour Me Water 'Kizz Daniel' mp3"
+                        </a>
+                    </div>
+                    <div class="music-div" >
+                        <a href="#"><img class="songs-div" src="top naija/5-omo pe.jpg">
+                        Omo Ope 'Asake ft Olamide' mp3"
+                        </a>
+                    </div>
+                    <div class="music-div" >
+                        <a href="#"><img class="songs-div" src="top naija/6-las las.jpg">
+                        Last Last 'Burna Boy' mp3"
+                        </a>
+                    </div>
+                    <div class="music-div" >
+                        <a href="#"><img class="songs-div" src="top naija/7-buga.jpg">
+                        Buga 'Kizz Daniel' mp3"
+                        </a>
+                    </div>
+                    <div class="music-div" >
+                        <a href="#"><img class="songs-div" src="top naija/8-dada.jpg">
+                        Dada 'Young John ft Davido' mp3"
+                        </a>
+                    </div>
+                    <div class="music-div" >
+                        <a href="#"><img class="songs-div" src="top naija/9-sugba.jpg">
+                        Sungba Remix 'Asake ft Burna Boy' mp3"
+                        </a>
+                    </div>    
+                </div>
+                
+        </div>
+        
+        <script>
+            var list=document.getElementById("list");
+var linkList=list.getElementsByClassName("header-list");
+var i;
+
+for(i=0; i<linkList.length; i++){
+    linkList[i].addEventListener("click", function(){
+        var current=document.getElementsByClassName("active");
+        current[0].className=current[0].className.replace("active", "");
+        this.className+=" active";
+        console.log(this.className);
+    })
+}
+        </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>movies</title>
+    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+    <header>
+        <button id="logo-btn">JOVIS<strong class="net">NET</strong></button>
+        <a href="https://wa.me/+2348109954209" class="fab fa-whatsapp-square"> </a>
+        <a href="#"  class="fab fa-facebook-f "> </a>
+        <a href="#" class="fas fa-user"></a>
+        <a href="#" class="fas fa-film"></a>
+        <a href="#" class="fa-solid fa-headphones"></a>
+        <div id="srch-div">
+        <a href="#" class="fas fa-search"></a>
+        <input type="search">
+        <input id="data-srch" type="button" name="search" value="Search">
+        </div>
+       
+    </header>
+            <ul id="list">
+                <a href="#">
+                    <li class="header-list">HOME</li>
+                </a>
+                <a href="music.html">
+                    <li class="header-list">MUSIC</li>
+                </a>
+                <a href="#">
+                    <li class="header-list active">MOVIES</li>
+                </a>
+                <a href="#">
+                    <li class="header-list">TRENDS</li>
+                </a>
+                <a href="#">
+                    <li class="header-list">VIDEOS</li>
+                </a>
+            </ul>
+            <div class="img-sect1">
+                <div class="img-items">
+                    Priest
+                    <img class="img-div" src="img9.jpg" >
+                    
+                    <button id="watch-btn">Watch</button>
+                    <a href="#"><button id="dwnd-btn">Download</button></a>
+                    
+                </div>
+                <div class="img-items">
+                    Impossible Possible
+                    <img class="img-div" src="img2.jpg">
+                    <button id="watch-btn">Watch</button> <a href="#"><button id="dwnd-btn">Download</button></button></a>
+                </div>
+                <div class="img-items">
+                    The Nun
+                    <img class="img-div" src="img3.jpg">
+                    <button id="watch-btn">Watch</button> <a href="#"><button id="dwnd-btn">Download</button></button></a>
+                </div>
+                <div class="img-items">
+                    A Wednesday
+                    <img class="img-div" src="img4.jpg">
+                    <button id="watch-btn">Watch</button> <a href="#"><button id="dwnd-btn">Download</button></button></a>
+                </div>
+            </div>
+            <div class="img-sect2">
+                <div class="img-items">
+                    Black Widow
+                    <img class="img-div" src="img5.jpg">
+                    <button id="watch-btn">Watch</button> <a href="#"><button id="dwnd-btn">Download</button></button></a>
+                </div>
+                <div class="img-items">
+                    Purple Pain
+                    <img class="img-div" src="img6.jpg">
+                    <button id="watch-btn">Watch</button> <a href="#"><button id="dwnd-btn">Download</button></button></a>
+                </div>
+                <div class="img-items">
+                    Witches of EasthWick
+                    <img class="img-div" src="img7.jpg">
+                    <button id="watch-btn">Watch</button> <a href="#"><button id="dwnd-btn">Download</button></a>
+                </div>
+                <div class="img-items">
+                    The Maize Runner
+                    <img class="img-div" src="img8.jpg">
+                    <button id="watch-btn">Watch</button> <a href="#"> <button id="dwnd-btn">Download</button></a>
+                </div>
+        <script>
+                      var list=document.getElementById("list");
+var linkList=list.getElementsByClassName("header-list");
+var i;
+
+for(i=0; i<linkList.length; i++){
+    linkList[i].addEventListener("click", function(){
+        var current=document.getElementsByClassName("active");
+        current[0].className=current[0].className.replace("active", "");
+        this.className+=" active";
+        console.log(this.className);
+    })
+}
+        </script>
+</body>
+</html>

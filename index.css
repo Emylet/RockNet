@@ -46,18 +46,18 @@ input{
     float: right;
     padding-right: 15px;
     color: black;
-    padding-top: 12px;
+    padding-top: 17px;
     font-size: 15px;
 }
 .fab{
     float: right;
     padding-right: 15px;
     color: blue;
-    padding-top: 12px;
+    padding-top: 17px;
     font-size: 15px;
 }
 .fa-whatsapp-square{
-    padding-top: 11px;
+    padding-top: 16px;
     color: green;
     font-size: 18px;
 }
@@ -70,11 +70,11 @@ a .fa-music{
 a .fa-headphones, .fa-search, .fa-tv{
     text-decoration: none;
 }
-.header-ul{
+#list{
     text-align: center;
     padding-top: 12px;
     padding-bottom: 5px;
-    height: 40px;
+    height: 25px;
     display: flex;
     list-style: none;
     background: rgba(0, 0, 0, 0.877);
@@ -88,12 +88,20 @@ a .fa-headphones, .fa-search, .fa-tv{
     font-family: lucida;
     font-weight: bold;
 }
+.active{
+    background-color: blue;
+    text-align: center;
+    border: 1px solid whitesmoke;
+    color: yellow;
+    align-self: center;
+    justify-content: center;
+    contain: content;
+    text-align: left;
+}
 a{
     text-decoration: none;
 }
-a li:hover{
-    color: darkred;
-}
+
 .img-sect1, .img-sect2{
     background:black;
     display: flex;
@@ -106,10 +114,14 @@ a li:hover{
 .img-items{
     margin-right: 10px;
     padding-top: 0;
+    font-size: 15px;
+    font-family: arial;
+    color: whitesmoke;
 }
 .img-div{
   width: 270px;
   height: 200px;
+  object-fit: cover;
   padding-top: 0;
   border: 1px solid whitesmoke;
 }
@@ -140,8 +152,8 @@ a li:hover{
     padding: 10px;
 }
 .music-box{
-    padding-top: 5px;
-    border-right: 2px solid black;
+    padding-top: 10px;
+    border-right: 2px solid darkblue;
     flex: 1.3;
     align-items: center;
     justify-content: center;
@@ -160,6 +172,7 @@ a li:hover{
 }
 #top-global{
     padding-left: 0;
+    width: 100%;
     font-size: 11px;
     font-family: arial;
 }
@@ -175,34 +188,70 @@ a li:hover{
     font-size: 11px;
     font-family: arial;
 }
+.music-div{
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid blue;
+    border-right: 1px solid darkblue;
+    border-left: 1px solid darkblue;
+    border-bottom: 1px solid black;
+  
+}
 .songs-div{
     width: 50px;
     height: 45px;
+    object-fit: cover;
 }
 .live-box{
     flex: 1;
-    padding-top: 5px;
 }
-#song-search{
-    width: 270px;
-    border: 1px solid black;
-    background: whitesmoke;
-    border-radius: 0;
-    border-right: 0;
+.album-box{
+    display: grid;
+    place-items: center;
+    padding-top: 0;
+    margin-top: 0;
 }
-#ok-btn{
-    padding-right: 2px;
-    width: 40px;
+.album-header{
+    font-size: 17px;
+    text-align: center;
+    border-bottom:1px solid blue;
+}
+#albumImg{
+    width: 300px;
+    height: 170px;
+    object-fit: cover;
+}
+#artistName{
+    font-size: 15px;
     font-weight: bold;
-    height: 18px;
-    border: 1px solid black;
-    border-radius: 0;
+    font-family: sans-serif;
 }
-#live-span{
-    font-family: times;
-    font-size: 12px;
+
+#albumName{
+    font-size: 23px;
     font-weight: bold;
     color: darkblue;
+    font-family: sans-serif;
+    justify-self: center;
+    align-self: center;
+}
+#artistName{
+    font-size: 19px;
+    font-weight: bold;
+    color: black;
+    font-family: arial;
+}
+.alb-btns{
+    padding: 0;
+    margin: 0px;
+    
+}
+.alb-btns button{
+    border:1px solid blue;
+    width: 60px;
+    height: 17px;
+    margin: 3px;
+    font-size: 9px;
 }
 .tv-div{
     width: 300px;
@@ -315,6 +364,13 @@ footer{
         transform: scale(1.2);
         margin: 5px 0;
     }
+    .img-items{
+        margin-right: 10px;
+        padding-top: 0;
+        font-size: 9px;
+        font-family: arial;
+        color: whitesmoke;
+    }
     #watch-btn{
         width: 40px;
         border: 1px solid whitesmoke;
@@ -341,8 +397,20 @@ footer{
     .container div{
         padding: 10px;
     }
+    #top-global{
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+        font-size: 11px;
+        font-family: arial;
+    }
+    .song-sec{
+        padding: 0;
+        margin: 0;
+        border: 3px solid black;
+    }
     .music-box{
-        border-right: 2px solid black;
+        border-right: 2px solid darkblue;
         flex: 1.3;
         align-items: center;
         justify-content: center;
@@ -360,25 +428,34 @@ footer{
     .live-box{
         flex: 1;
     }
-    #song-search{
+    #albumImg{
         width: 100px;
-        border: 1px solid black;
-        background: whitesmoke;
-        border-radius: 0;
-        border-right: 0;
+        height: 70px;
+        object-fit: cover;
     }
-    #ok-btn{
-        padding-right: 2px;
-        width: 20px;
+    #artistName{
+        font-size: 11px;
         font-weight: bold;
-        height: 18px;
-        border: 1px solid black;
-        border-radius: 0;
+        font-family: sans-serif;
     }
-    .tv-div{
-        width: 150px;
-        height: 100px;
-        border: 1px solid blue;
+    
+    #albumName{
+        font-size: 13px;
+        display: flex;
+        font-weight: bold;
+        padding: 0;
+        margin: 0;
+        color: darkblue;
+        font-family: sans-serif;
+        justify-self: center;
+        align-self: center;
+    }
+    .alb-btns button{
+        border:1px solid blue;
+        width: 30px;
+        height: 13px;
+        margin: 3px;
+        font-size: 9px;
     }
     h2{
         font-size: 20px;
