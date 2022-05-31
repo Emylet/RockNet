@@ -146,15 +146,31 @@ a li:hover{
     align-items: center;
     justify-content: center;
 }
-select{
-    width: 300px;
-    background: whitesmoke;
-    font-family: lucida;
+#top-g, #naija-top, #newest{
+    background: none;
+    width: 100px;
+    color: darkblue;
+    border: 2px solid darkblue;
     font-weight: bold;
-    border: 1px solid black;
-    justify-content: center;
+    border-radius: 3px;
+    font-family: lucida;
+}
+#top-g:hover, #naija-top:hover, #newest:hover{
+    color: darkorange;
 }
 #top-global{
+    padding-left: 0;
+    font-size: 11px;
+    font-family: arial;
+}
+#naija-topsongs{
+    display: none;
+    padding-left: 0;
+    font-size: 11px;
+    font-family: arial;
+}
+#new-released{
+    display: none;
     padding-left: 0;
     font-size: 11px;
     font-family: arial;
@@ -331,12 +347,15 @@ footer{
         align-items: center;
         justify-content: center;
     }
-    select{
-        width: 140px;
-        background: whitesmoke;
-        font-family: lucida;
+    #top-g, #naija-top, #newest{
+        width: 50px;
+        background: none;
+        color: darkblue;
+        border: 2px solid darkblue;
+        font-size: 9px;
         font-weight: bold;
-        border: 1px solid black;
+        border-radius: 3px;
+        font-family: lucida;
     }
     .live-box{
         flex: 1;

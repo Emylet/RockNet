@@ -5,13 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ROCK-NET</title>
+    <script src="js/jquery.js"></script>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="css/all.css"
+    <link rel="stylesheet" href="css/all.css">
+    <script>
+        $("document").ready(function(){
+        $("#naija-top").on("click", function(){
+            $("#naija-topsongs").show();
+            $("#top-global").hide();
+            $("#new-released").hide();
+        });
+
+        $("#top-g").on("click", function(){
+            $("#top-global").show();
+            $("#naija-topsongs").hide();
+            $("#new-released").hide();
+        });
+
+        $("#newest").on("click", function(){
+            $("#new-released").show();
+            $("#naija-topsongs").hide();
+            $("#top-global").hide();
+        });
+
+
+    })
+    </script>
 </head>
 <body>
     <header>
         <button id="logo-btn">ROCK<strong class="net">NET</strong></button>
-        <a href="https://wa.me/08109954209" class="fab fa-whatsapp-square"> </a>
+        <a href="https://wa.me/+2348109954209" class="fab fa-whatsapp-square"> </a>
         <a href="#"  class="fab fa-facebook-f "> </a>
         <a href="#" class="fas fa-user"></a>
         <a href="#" class="fas fa-film"></a>
@@ -79,41 +103,97 @@
             </div>
             <div class="container">
                 <div class="music-box">
-                    <form action="#">
-                        <select name="songs" id="types">
-                            <option value="top-songs">Top Global</option>
-                            <option value="latest">Latest Songs</option>
-                            <option value="most-dwnds">Most Downloads</option>
-                            <option value="naija-trends">Naija Tops</option>
-                            <option value="afro-beats">Afro Beatz</option>
-                            <option value="hip-hops">Hip-Hops</option>
-                        </select>
-                    </form>
+                    <button id="top-g">Top Global</button>
+                    <button id="naija-top">Naija Tops</button>
+                    <button id="newest">Latest </button>
                         <div id="top-global">
-                            <a href="#"><img class="songs-div" src="topsongs img/1-thousand.jpg">
-                                Thousand Miles "The Kids LAROL"
+                            <a href="#"><img class="songs-div" src="topsongs img/11-all i wanna.jpg">
+                                She's all I wanna be 'Tate McRae' Mp3'
                             </a><br>
-                            <a href="#"><img class="songs-div" src="topsongs img/2-pepas.jpg">
-                                PepasFarruko mp3"
+                            <a href="#"><img class="songs-div" src="topsongs img/12-As it was.jpg">
+                                As It Was 'Harry Styles' mp3"
                             </a><br>
-                            <a href="#"><img class="songs-div" src="topsongs img/3-watermelon.jpg">
-                                Watermelon "SugarHarry Styles mp3"
+                            <a href="#"><img class="songs-div" src="topsongs img/13-Late night talking.jpg">
+                                Late Night Talking 'Harry Styles' mp3"
                             </a><br>
-                            <a href="#"><img class="songs-div" src="topsongs img/4-another.jpg">
-                                Another Love "Tom Odell mp3"
+                            <a href="#"><img class="songs-div" src="topsongs img/14-La Lleo.jpg">
+                                La Llevo Al Cielo 'Nengo Flow' mp3"
                             </a><br>
-                            <a href="#"><img class="songs-div" src="topsongs img/5-myUnierse.jpg">
-                                My Universe "Coldplay, BTS. mp3"
+                            <a href="#"><img class="songs-div" src="topsongs img/15-N95 Kendrick.jpg">
+                                N95 'Kendrick Lamar' mp3"
                             </a><br>
-                            <a href="#"><img class="songs-div" src="topsongs img/6-blindingLights.jpg">
-                                Blinding Lights "The Weekend mp3"
+                            <a href="#"><img class="songs-div" src="topsongs img/16-Mamii.jpg">
+                                MAMIII 'Becky' mp3"
+                            </a><br>
+                            <a href="#"><img class="songs-div" src="topsongs img/17-jack harlow.jpg">
+                                First Class...'Jack Harlow' mp3"
+                            </a><br>
+                            <a href="#"><img class="songs-div" src="topsongs img/18-future wait 4 U.jpg">
+                                Wait For You 'Future' mp3"
                             </a><br>
                             <a href="#"><img class="songs-div" src="topsongs img/7-puffin.jpg">
                                 PUFFIN ON ZOOTIE Future mp3"
                             </a><br>
-                            <a href="#"><img class="songs-div" src="topsongs img/8-ligths.jpg">
-                                Light Switch Chalie-Puth mp3"
-                            </a>
+                        </div>
+                        <div id="naija-topsongs">
+                            <a href="#"><img class="songs-div" src="top naija/1-understand.jpg">
+                                Understand 'Omah Lay' "Mp3"
+                            </a><br>
+                            <a href="#"><img class="songs-div" src="top naija/2-calm down.jpg">
+                                Calm Down 'Rema' mp3"
+                            </a><br>
+                            <a href="#"><img class="songs-div" src="top naija/3-high.jpg">
+                                High 'Adekunle ft Davido' mp3"
+                            </a><br>
+                            <a href="#"><img class="songs-div" src="top naija/4-pour me water.jpg">
+                                Pour Me Water 'Kizz Daniel' mp3"
+                            </a><br>
+                            <a href="#"><img class="songs-div" src="top naija/5-omo pe.jpg">
+                                Omo Ope 'Asake ft Olamide' mp3"
+                            </a><br>
+                            <a href="#"><img class="songs-div" src="top naija/6-las las.jpg">
+                                Last Last 'Burna Boy' mp3"
+                            </a><br>
+                            <a href="#"><img class="songs-div" src="top naija/7-buga.jpg">
+                                Buga 'Kizz Daniel' mp3"
+                            </a><br>
+                            <a href="#"><img class="songs-div" src="top naija/8-dada.jpg">
+                                Dada 'Young John ft Davido' mp3"
+                            </a><br>
+                            <a href="#"><img class="songs-div" src="top naija/9-sugba.jpg">
+                                Sungba Remix 'Asake ft Burna Boy' mp3"
+                            </a><br>
+
+                        </div>
+                        <div id="new-released">
+                            <a href="#"><img class="songs-div" src="new songs/1-Ronaldo.jpg">
+                                Ronaldo 'Mohbad' "Mp3"
+                            </a><br>
+                            <a href="#"><img class="songs-div" src="new songs/2-wish list.jpg">
+                                WhishList 'Yung' mp3"
+                            </a><br>
+                            <a href="#"><img class="songs-div" src="new songs/3-set it off.jpg">
+                                Set It Off 'Yung' mp3"
+                            </a><br>
+                            <a href="#"><img class="songs-div" src="top naija/4-pour me water.jpg">
+                                Pour Me Water 'Kizz Daniel' mp3"
+                            </a><br>
+                            <a href="#"><img class="songs-div" src="top naija/5-omo pe.jpg">
+                                Omo Ope 'Asake ft Olamide' mp3"
+                            </a><br>
+                            <a href="#"><img class="songs-div" src="top naija/6-las las.jpg">
+                                Last Last 'Burna Boy' mp3"
+                            </a><br>
+                            <a href="#"><img class="songs-div" src="top naija/7-buga.jpg">
+                                Buga 'Kizz Daniel' mp3"
+                            </a><br>
+                            <a href="#"><img class="songs-div" src="top naija/8-dada.jpg">
+                                Dada 'Young John ft Davido' mp3"
+                            </a><br>
+                            <a href="#"><img class="songs-div" src="top naija/9-sugba.jpg">
+                                Sungba Remix 'Asake ft Burna Boy' mp3"
+                            </a><br>
+                           
                         </div>
                     </div>
                 <div class="live-box">
@@ -122,8 +202,8 @@
                         <span class="resu-span"></span>
                     </div>
                     <span id="live-span">NOW LIVE..</span><br>
-                    <a href="#"><img class="tv-div" src="topsongs img/7-puffin.jpg">
-                        PUFFIN ON ZOOTIE
+                    <a href="#"><img class="tv-div" src="imgs/prime.jpg">
+                        PRIME...
                     </a>
                     <ul class="trends-list">
                         <h2> Related:</h2>
@@ -132,19 +212,23 @@
                             </li>
                         </a>
                         <a id="trends-link" href="#">
-                            <li class="trends">Liverpool Quadriple hope alive
-                            </li>
-                        </a>
-                        <a id="trends-link" href="#">
-                            <li class="trends">Erik Ten Hag Lands in UK ahead of his United managerial Takeover
-                            </li>
-                        </a>
-                        <a id="trends-link" href="#">
-                            <li class="trends">Blashemy is also a Sin "Atiku"
+                            <li class="trends">Madrid are Champions of Europe 
                             </li>
                         </a>
                         <a id="trends-link" href="#">
                             <li class="trends">Panics continue on crypto traders as BTC falls to $29USD
+                            </li>
+                        </a>
+                        <a id="trends-link" href="#">
+                            <li class="trends">Atiku Wins PDP Primary Election 
+                            </li>
+                        </a>
+                        <a id="trends-link" href="#">
+                            <li class="trends">Why Indian is not allowed in International Football
+                            </li>
+                        </a>
+                        <a id="trends-link" href="#">
+                            <li class="trends">Lil Wayne names his all time greatest rapper No "Eminem and 2Pac"
                             </li>
                         </a>
                         <a id="trends-link" href="#">
@@ -158,6 +242,7 @@
 <span>Mail Us mmanueljason@gmail.com</span><br>
 <span id="tele">Tel: +2348109954209</span>
 </footer>
-        
+<script src="index.js">
+</script>  
 </body>
 </html>
