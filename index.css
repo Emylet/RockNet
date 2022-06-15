@@ -243,15 +243,12 @@ a{
 }
 .alb-btns{
     padding: 0;
-    margin: 0px;
+    margin: 0;
     
 }
-.alb-btns button{
-    border:1px solid blue;
-    width: 60px;
-    height: 17px;
-    margin: 3px;
-    font-size: 9px;
+.fa-chevron-circle-right, .fa-chevron-circle-left{
+    color: blue;
+    font-size: 24px;
 }
 .tv-div{
     width: 300px;
@@ -450,12 +447,9 @@ footer{
         justify-self: center;
         align-self: center;
     }
-    .alb-btns button{
-        border:1px solid blue;
-        width: 30px;
-        height: 13px;
-        margin: 3px;
-        font-size: 9px;
+    .fa-chevron-circle-right, .fa-chevron-circle-left{
+        color: blue;
+        font-size: 17px;
     }
     h2{
         font-size: 20px;
